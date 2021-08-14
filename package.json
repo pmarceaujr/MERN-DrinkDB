@@ -1,0 +1,43 @@
+{
+  "name": "cocktail_code",
+  "version": "1.0.0",
+  "description": "REACT, NODE, GraphQL, MongoDB app to assit bartenders and non-bartenders in making drinks based on ingredients on hand.",
+  "main": "server.js",
+  "scripts": {
+    "server": "nodemon ./server/server.js",
+    "client": "cd client && npm start",
+    "dev": "concurrently --names \"server,client\" \"npm run server --silent\" \"npm run client --silent\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tracye1083/Project3.git"
+  },
+  "keywords": [
+    "REACT",
+    "NODE",
+    "GraphQL",
+    "MongoDB"
+  ],
+  "author": "Tracy, Alan, Patrick, Paul",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tracye1083/Project3/issues"
+  },
+  "homepage": "https://github.com/tracye1083/Project3#readme",
+  "dependencies": {
+    "apollo-server-express": "^3.1.2",
+    "bcrypt": "^5.0.1",
+    "body-parser": "^1.19.0",
+    "concurrently": "^6.2.1",
+    "cors": "^2.8.5",
+    "create-react-app": "^4.0.3",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "graphql": "^15.5.1",
+    "graphql-tools": "^8.1.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.13.7",
+    "praphql": "^0.1.1"
+  }
+}
